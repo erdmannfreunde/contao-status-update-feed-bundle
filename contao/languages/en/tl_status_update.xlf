@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+  <file datatype="php" original="contao/languages/en/tl_status_update.php" source-language="en">
+    <body>
+      <trans-unit id="tl_status_update.feed_pages.0">
+        <source>Publish in subscription feeds</source>
+      </trans-unit>
+      <trans-unit id="tl_status_update.feed_pages.1">
+        <source>All installations subscribed to one of the selected feeds show this update in their backend dashboard. The feed can be retrieved publicly: do not enter confidential details such as customer or server names.</source>
+      </trans-unit>
+      <trans-unit id="tl_status_update.feed_license_missing">
+        <source>No valid license key is stored for the status update feed. The feed pages are not delivered (HTTP 403), subscribed installations keep their last state. Enter the key via the "Lizenz" button.</source>
+      </trans-unit>
+      <trans-unit id="tl_status_update.feed_license_more">
+        <source>More information</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

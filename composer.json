@@ -1,0 +1,55 @@
+{
+  "name": "erdmannfreunde/contao-status-update-feed-bundle",
+  "description": "Provides status updates as a subscribable feed for the Contao Status-Updates Bundle",
+  "keywords": [
+    "contao",
+    "status",
+    "updates",
+    "feed",
+    "backend",
+    "dashboard"
+  ],
+  "type": "contao-bundle",
+  "license": "LGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Erdmann & Freunde",
+      "homepage": "https://erdmann-freunde.de"
+    }
+  ],
+  "homepage": "https://github.com/erdmannfreunde/contao-status-update-feed-bundle",
+  "support": {
+    "issues": "https://github.com/erdmannfreunde/contao-status-update-feed-bundle/issues",
+    "source": "https://github.com/erdmannfreunde/contao-status-update-feed-bundle"
+  },
+  "require": {
+    "php": "^8.2",
+    "contao/core-bundle": "^5.3",
+    "erdmannfreunde/contao-license-bundle": "^1.1",
+    "erdmannfreunde/contao-status-update-bundle": "^1.5",
+    "symfony/config": "^6.4 || ^7.0",
+    "symfony/dependency-injection": "^6.4 || ^7.0",
+    "symfony/http-foundation": "^6.4 || ^7.0",
+    "symfony/http-kernel": "^6.4 || ^7.0"
+  },
+  "require-dev": {
+    "contao/easy-coding-standard": "^6.0",
+    "contao/manager-plugin": "^2.3"
+  },
+  "conflict": {
+    "contao/core": "*",
+    "contao/manager-plugin": "<2.0 || >=3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ErdmannFreunde\\ContaoStatusUpdateFeedBundle\\": "src/"
+    }
+  },
+  "scripts": {
+    "cs": "@php vendor/bin/ecs check --ansi",
+    "cs-fix": "@php vendor/bin/ecs check --fix --ansi"
+  },
+  "extra": {
+    "contao-manager-plugin": "ErdmannFreunde\\ContaoStatusUpdateFeedBundle\\ContaoManager\\Plugin"
+  }
+}

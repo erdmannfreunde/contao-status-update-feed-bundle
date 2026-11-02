@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+  <file datatype="php" original="contao/languages/en/default.php" source-language="en">
+    <body>
+      <trans-unit id="PTY.status_update_feed.0">
+        <source>Status update feed</source>
+      </trans-unit>
+      <trans-unit id="PTY.status_update_feed.1">
+        <source>Outputs all status updates assigned to this feed as JSON feed for other Contao installations. The page title is the feed name in the selection.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

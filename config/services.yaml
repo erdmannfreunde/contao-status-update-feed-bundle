@@ -1,0 +1,20 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    ErdmannFreunde\ContaoStatusUpdateFeedBundle\:
+        resource: '../src/'
+        exclude:
+            - '../src/{ContaoManager,DependencyInjection}'
+            - '../src/ErdmannFreundeContaoStatusUpdateFeedBundle.php'
+
+    ErdmannFreunde\ContaoStatusUpdateFeedBundle\License\StatusUpdateFeedRegistration:
+        class: ErdmannFreunde\ContaoLicenseBundle\License\ProductRegistration
+        arguments:
+            $productKey: 'status-update-feed'
+            $productName: 'Contao Status Update Feed'
+            $currentMajor: 1
+            $vendorUrl: 'https://erdmann-freunde.de/leistungen/contao-erweiterungen/status-update#status-update-feed'
+        tags:
+            - { name: 'erdmannfreunde.license.product' }
